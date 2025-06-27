@@ -27,20 +27,17 @@ export default function MealPlanningChatbot() {
       quickForm.allergies ? `Consider the following allergies or issues: ${quickForm.allergies}.` : ""
     } Provide a detailed meal plan with ingredients and instructions.`
 
-    // Append the message directly to the chat
     await append({
       role: "user",
       content: prompt,
     })
 
-    // Clear the form
     setQuickForm({ recipeCount: "", recipes: "", allergies: "" })
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 p-4">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-4">
             <ChefHat className="h-8 w-8 text-orange-600" />
@@ -50,7 +47,6 @@ export default function MealPlanningChatbot() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {/* Quick Form */}
           <Card className="lg:col-span-1">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -104,7 +100,6 @@ export default function MealPlanningChatbot() {
             </CardContent>
           </Card>
 
-          {/* Chat Interface */}
           <Card className="lg:col-span-2">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -174,7 +169,6 @@ export default function MealPlanningChatbot() {
           </Card>
         </div>
 
-        {/* Example Prompts */}
         <Card className="mt-6">
           <CardHeader>
             <CardTitle className="text-lg">Example Prompts</CardTitle>
@@ -184,17 +178,17 @@ export default function MealPlanningChatbot() {
               <div className="space-y-2">
                 <h4 className="font-medium text-gray-900">Meal Planning</h4>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• "Create a 7-day vegetarian meal plan"</li>
-                  <li>• "I need 3 quick dinner recipes under 30 minutes"</li>
-                  <li>• "Plan meals for a family of 4 with a $50 budget"</li>
+                  <li>{"• Create a 7-day vegetarian meal plan"}</li>
+                  <li>{"• I need 3 quick dinner recipes under 30 minutes"}</li>
+                  <li>{"• Plan meals for a family of 4 with a $50 budget"}</li>
                 </ul>
               </div>
               <div className="space-y-2">
                 <h4 className="font-medium text-gray-900">Dietary Restrictions</h4>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• "Gluten-free breakfast ideas for the week"</li>
-                  <li>• "Keto-friendly lunch recipes with chicken"</li>
-                  <li>• "Dairy-free desserts that kids will love"</li>
+                  <li>{"• Gluten-free breakfast ideas for the week"}</li>
+                  <li>{"• Keto-friendly lunch recipes with chicken"}</li>
+                  <li>{"• Dairy-free desserts that kids will love"}</li>
                 </ul>
               </div>
             </div>
