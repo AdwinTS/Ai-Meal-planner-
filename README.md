@@ -2,7 +2,7 @@
 
 An intelligent meal planning assistant powered by Google's Gemini AI that creates personalized meal plans with detailed recipes, ingredients, and cooking instructions.
 
-![Image](https://github.com/user-attachments/assets/a0113f0f-3e5a-4f99-8cfd-e16e5563c959)
+![Image](https://github.com/user-attachments/assets/d5e71217-e781-4cf0-9a6e-cdcdc60b6a51)
 
 ## ✨ Features
 
